@@ -10,7 +10,7 @@ function HomePage() {
                 </div>
 
                 {/* Pokemons */}
-                <div className="flex flex-row items-center mt-4 gap-0 ml-2">
+                <div className="flex flex-row items-center justify-center md:justify-start mt-4 gap-0">
                     <img src="./gif/froslas.gif" alt="froslas" className="w-15 h-15 object-cover"/>
                     <img src="./gif/sylveon.gif" alt="sylveon" className="w-15 h-15 object-cover"/>
                     <img src="./gif/dragonite.gif" alt="dragonite" className="w-15 h-15 object-cover"/>
@@ -28,8 +28,12 @@ function HomePage() {
                             dni if you're - homophobic/transphobic, insensitive, ableist, misogynist, ignorant and has superiority complex
                         </p>
                     </div>
-                    <div className="flex flex-col gap-4 w-full md:w-auto">
-                        <div className="rounded-2xl border-2 border-pink-300">
+                    <div className="flex flex-col gap-8 w-full md:w-auto">
+
+                        {/* Buddies card */}
+                        <div className="lace-card rounded-2xl mt-4">
+                            <span className="ribbon-left"></span>
+                            <span className="ribbon-right"></span>
                             <div className="rounded-t-2xl bg-pink-300 px-3 py-1">
                                 <h2 className="text-2xl">buddies ♡</h2>
                             </div>
@@ -38,7 +42,11 @@ function HomePage() {
                                 ate tricia, philip, lyndon, toni &lt;3 eliyah, nadja, abigail, sophia, ate richelle, dm, roblox fam (carriane, petal, icy, clint)
                             </p>
                         </div>
-                        <div className="rounded-2xl border-2 border-pink-300">
+
+                        {/* Interests card */}
+                        <div className="lace-card rounded-2xl mt-4">
+                            <span className="ribbon-left"></span>
+                            <span className="ribbon-right"></span>
                             <div className="rounded-t-2xl bg-pink-300 px-3 py-1">
                                 <h2 className="text-2xl">૮ ・ﻌ・ა +</h2>
                             </div>
@@ -47,43 +55,52 @@ function HomePage() {
                                 stardew valley & animal crossing + minecraft and obvi i love pink
                             </p>
                         </div>
+
                     </div>
                 </div>
-                <div className="flex flex-col mt-2 gap-4">
-                    {/* Bottom card */}
-                    <div className="mt-3 rounded-2xl border-3 border-pink-300">
+
+                <div className="flex flex-col mt-2 gap-8">
+
+                    {/* Bottom bio card */}
+                    <div className="lace-card rounded-2xl mt-6">
+                        <span className="ribbon-left"></span>
+                        <span className="ribbon-right"></span>
                         <p className="text-lg text-gray-600 text-justify p-3">
                             i like to draw and express my feelings through art both digitally and traditionally (colorpencils/watercolors), 
                             but most of the time i jus bedrot, i like to stream & play video games. i parent one holland fuzzy lop + lionhead (they're ded). 
                             i have a deep admiration for anything artsy or strange. if u'd like to get to know me further, i hope we'll get along ଘ(੭*ˊᵕˋ)੭
                         </p>
                     </div>
-                    <div className="flex flex-row items-center gap-4">
-                        <div className="mt-3 rounded-2xl border-2 border-pink-300">
-                            <div className="rounded-2xl border-2 border-pink-300">
-                                <div className="rounded-t-2xl bg-pink-200 px-3 py-1">
-                                    <h2 className="text-2xl">likes</h2>
-                                </div>
-                                <p className="text-lg text-gray-600 text-justify p-2">
-                                    pokemon, gossip, facial piercings, lip oils, nails, carnivals, matcha, hanging out w/ my besties
-                                </p>
-                            </div>
-                        </div>
-                        <div className="mt-3 rounded-2xl border-2 border-pink-300">
-                            <div className="rounded-2xl border-2 border-pink-300">
-                                <div className="rounded-t-2xl bg-pink-200 px-3 py-1">
-                                    <h2 className="text-2xl">dislikes</h2>
-                                </div>
-                                <p className="text-lg text-gray-600 text-justify p-2">
-                                    math, being left out, my dad, anti-depressants, being sad, hanging out w/ me out of pity
-                                </p>
-                            </div>
-                        </div>
-                        
-                    </div>
 
+                    {/* Likes + Dislikes */}
+                    <div className="flex flex-row items-stretch gap-8">
+
+                        {/* Likes card */}
+                        <div className="lace-card rounded-2xl mt-4 flex-1">
+                            <span className="ribbon-left"></span>
+                            <span className="ribbon-right"></span>
+                            <div className="rounded-t-2xl bg-pink-200 px-3 py-1">
+                                <h2 className="text-2xl">likes</h2>
+                            </div>
+                            <p className="text-lg text-gray-600 text-justify p-2">
+                                pokemon, gossip, facial piercings, lip oils, nails, carnivals, matcha, hanging out w/ my besties
+                            </p>
+                        </div>
+
+                        {/* Dislikes card */}
+                        <div className="lace-card rounded-2xl mt-4 flex-1">
+                            <span className="ribbon-left"></span>
+                            <span className="ribbon-right"></span>
+                            <div className="rounded-t-2xl bg-pink-200 px-3 py-1">
+                                <h2 className="text-2xl">dislikes</h2>
+                            </div>
+                            <p className="text-lg text-gray-600 text-justify p-2">
+                                math, being left out, my dad, anti-depressants, being sad, hanging out w/ me out of pity
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
-                
 
             </div>
         </div>

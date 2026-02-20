@@ -6,9 +6,13 @@ function Navbar() {
 
     return (
         <nav className="bg-pink-200 sticky top-0 z-50 shadow-md rounded-b-md w-full">
-            <div className="w-full px-6 py-4 flex items-center justify-between">
+            <div className="flex flex-row w-full px-6 py-4 items-center justify-between">
                 <div className="text-2xl md:text-3xl font-bold font-mono text-white">
                     cara's journal
+                </div>
+
+                <div className="flex flex-row items-center justify-center">
+                    <img src="./gif/tramp.gif" alt="froslas" className="w-50 h-15 object-cover"/>
                 </div>
 
                 {/* Desktop links */}
